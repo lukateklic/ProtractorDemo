@@ -4,7 +4,7 @@ describe('Sign in to SSLs.com', function(){
     const search = $('.ssls-input');
     const productCardHeader = $$('.ssls-product-card__header h3');
 
-    /* govno kod
+    /* bed style
     
     function findProducts(productCardHeader){
         
