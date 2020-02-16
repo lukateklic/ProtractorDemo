@@ -52,6 +52,19 @@ describe('Sign in to SSLs.com', function(){
         expect(productCardHeader.get(1).getText()).toEqual('PositiveSSL Wildcard');
         expect(productCardHeader.get(2).getText()).toEqual('PositiveSSL Multi-Domain');
         /*---need function---*/ 
+        search.clear();
+    });
+
+    it('Search \'EssentialSSL\' products', function(){
+        search.click();
+        search.sendKeys('EssentialSSL');
+        expect(search.getAttribute('value')).toBe('EssentialSSL');
+        
+        /*---need function---*/
+        expect(productCardHeader.get(0).getText()).toEqual('EssentialSSL');
+        expect(productCardHeader.get(1).getText()).toEqual('EssentialSSL Wildcard');
+        /*---need function---*/ 
+        search.clear();
     });
 
 });
