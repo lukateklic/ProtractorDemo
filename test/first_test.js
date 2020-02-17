@@ -1,4 +1,4 @@
-describe('Sign in to SSLs.com', function(){
+describe('Search products in the SSLs.com', function(){
 
     const sign = $('[ng-click="$ctrl.toggleSearch()"]');
     const search = $('.ssls-input');
